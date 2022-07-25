@@ -1,0 +1,878 @@
+/* Google font: Kreon  =----------*/
+@import url('https://fonts.googleapis.com/css2?family=Kreon&family=Lato&display=swap');
+/* -----------------------------------------------------------------------------------------
+-------------------------------------------------------------
+------------------------------- */
+
+
+
+/* media queries for mobile -------------------------
+---------------------------------------------- */
+
+@media only screen and (max-width:580px) {
+
+    body {
+        font-family: 'lato', serif;
+        overflow-x: hidden;
+        font-size: 12px;
+        margin: 0;
+        position: relative;
+    }
+
+    .hero-parent {
+        border-radius: 15px;
+        background: rgb(186, 187, 196);
+        background: radial-gradient(circle, rgba(186, 187, 196, 1) 0%, rgba(21, 56, 52, 1) 59%);
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    .hero-child {
+        height: 500px;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .hero-child h1 {
+        font-size: 4rem;
+    }
+
+    .mobile-view-hero {
+        padding-top: 5rem;
+
+    }
+
+    .mobile-view-hero:hover {
+        animation: wiggle 2s linear infinite;
+    }
+
+    /* Keyframes */
+    @keyframes wiggle {
+
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        30% {
+            transform: rotateZ(6deg);
+        }
+
+        35% {
+            transform: rotateZ(-4deg);
+        }
+
+        40%,
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    #mobile-view-hero-img {
+        display: flex;
+    }
+
+
+    .mobile-view-hero img {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .hero-btn {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        padding: 1rem;
+        border-radius: 5px;
+        transition: transform .2s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-btn:hover {
+        transform: scale(1.1);
+    }
+
+    /* blog part-------------------------
+    --------------------------- */
+    .blog-static-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .blog-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* button for blogs */
+    .blog-btn {
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 1rem;
+        border: 1px solid gray;
+        margin-top: 1rem;
+        border-radius: .5rem;
+        color: black;
+    }
+
+    .blog-btn:hover {
+        background-color: lightgray;
+    }
+
+    #highlighted-btn {
+        border: none;
+        background-color: red;
+        color: white;
+    }
+
+    /* card css starts here please read carefully----------------------
+    ------------------- */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin-block: 2rem;
+        gap: 2rem;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: clamp(20rem, calc(20rem + 2vw), 22rem);
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        background: #ECE9E6;
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+        transition: transform .2s;
+        /* Animation */
+
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+
+    }
+
+
+
+    .card__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+
+    .tag {
+        align-self: flex-start;
+        padding: .25em .75em;
+        border-radius: 1em;
+        font-size: .75rem;
+    }
+
+    .tag+.tag {
+        margin-left: .5em;
+    }
+
+    .tag-blue {
+        background: #56CCF2;
+        background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+        color: #fafafa;
+    }
+
+
+    .card__body h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .card__footer {
+        display: flex;
+        padding: 1rem;
+        margin-top: auto;
+    }
+
+    .user {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .card-icon {
+        width: 2rem;
+        display: inline;
+    }
+
+    /* footer part starts here */
+
+    footer {
+        padding-top: 2rem;
+        width: 100%;
+        background-color: black;
+    }
+
+    .footer-banner {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+        color: lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .footer-link {
+        text-align: center;
+        text-decoration: none;
+        color: lightgray;
+
+    }
+
+    .footer-link ul>li,
+    a {
+        list-style: none;
+        padding-top: 1rem;
+        text-align: start;
+        text-decoration: none;
+        color: lightgray;
+    }
+
+
+    .social_media_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+
+    .social_media_icon_container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+/* global footer css -------- */
+.footer-link {
+    text-align: center;
+    text-decoration: none;
+    color: lightgray;
+
+}
+
+.footer-link ul>li,
+a {
+    list-style: none;
+    padding-top: 1rem;
+    text-align: start;
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* ----------------------------------- */
+
+
+/* ---------------media queries for tablets  ------------------------------
+------------------------------------------------*/
+
+@media (min-width: 681px) and (max-width: 1024px) {
+    body {
+        font-family: 'lato', serif;
+        font-size: 12px;
+    }
+
+
+    .hero {
+        background: rgb(5, 5, 9);
+        background: linear-gradient(90deg, rgba(5, 5, 9, 1) 53%, rgba(76, 117, 125, 1) 99%);
+        width: 90%;
+        border-radius: 1rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .hero-child {
+
+        width: 50%;
+        padding-left: 10%;
+        color: white;
+    }
+
+    .hero-child h1 {
+        font-size: 2.25rem;
+    }
+
+
+    .hero-btn {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        padding: 1rem;
+        border-radius: 5px;
+        transition: transform .2s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+
+    .hero-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .mobile-view-hero:hover {
+        animation: wiggle 2s linear infinite;
+    }
+
+    /* Keyframes */
+    @keyframes wiggle {
+
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        30% {
+            transform: rotateZ(6deg);
+        }
+
+        35% {
+            transform: rotateZ(-4deg);
+        }
+
+        40%,
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    /* blog buttons container ------------ */
+    .blog-static-box {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .blog-btn {
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 1rem;
+        border: 1px solid gray;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        border-radius: .5rem;
+        color: black;
+    }
+
+    .blog-btn:hover {
+        background-color: lightgray;
+    }
+
+    #highlighted-btn {
+        background-color: red;
+        color: white;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border: none;
+    }
+
+    /* card container css starts here --------------
+------------------------ */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin-block: 2rem;
+        gap: 2rem;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: clamp(20rem, calc(20rem + 2vw), 22rem);
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        background: #ECE9E6;
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+        transition: transform .2s;
+        /* Animation */
+
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    .card__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+
+    .tag {
+        align-self: flex-start;
+        padding: .25em .75em;
+        border-radius: 1em;
+        font-size: .75rem;
+    }
+
+    .tag+.tag {
+        margin-left: .5em;
+    }
+
+    .tag-blue {
+        background: #56CCF2;
+        background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+        color: #fafafa;
+    }
+
+
+    .card__body h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .card__footer {
+        display: flex;
+        padding: 1rem;
+        margin-top: auto;
+    }
+
+    .user {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .card-icon {
+        width: 2rem;
+        display: inline;
+    }
+
+    /* footer starts here  -----------------------
+----------------------------------------------------*/
+    footer {
+        background-color: black;
+    }
+
+    .footer-banner {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: lightgray;
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .footer-link ul>li {
+        display: inline-block;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-link ul>li>a {
+        color: lightgray;
+    }
+
+    .social_media_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+
+    .social_media_icon_container {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    /* end is here  */
+}
+
+
+/* .....................xxx.......................... */
+
+/* media queries for desktop  view ------------------------
+----------------------------------------------- */
+
+@media only screen and (min-width: 1025px) {
+
+    /* hero part starts from here---------------------------
+----------------------------------------------------------  */
+    body {
+        font-family: 'lato', serif;
+        margin: 0;
+
+    }
+
+
+    /* everything about hero------------------
+---------------------------------------- */
+
+    .hero {
+        background: rgb(5, 5, 9);
+        background: linear-gradient(90deg, rgba(5, 5, 9, 1) 53%, rgba(76, 117, 125, 1) 99%);
+        width: 90%;
+        border-radius: 2rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .hero-child {
+
+        width: 50%;
+        padding-left: 10%;
+        color: white;
+    }
+
+    .hero-child h1 {
+        font-size: 3.75rem;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .mobile-view-hero img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mobile-view-hero:hover {
+        animation: wiggle 2s linear infinite;
+    }
+
+    /* Keyframes */
+    @keyframes wiggle {
+
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        30% {
+            transform: rotateZ(6deg);
+        }
+
+        35% {
+            transform: rotateZ(-4deg);
+        }
+
+        40%,
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+
+    .hero-btn {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        padding: 1rem;
+        border-radius: 5px;
+        transition: transform .2s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+
+    .hero-btn:hover {
+        transform: scale(1.1);
+    }
+
+
+    .only-mobile {
+        display: none;
+    }
+
+    /* card and css stuff starts here --
+--------------------------------------------------------------- */
+
+    /* blog parent -------------------- */
+    .blog-parent {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 18.75rem 1fr;
+    }
+
+
+    .blog-static-box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .blog-box {
+        background-color: rgb(12, 11, 11);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        width: 90%;
+        height: 300px;
+
+    }
+
+    .blog-btn {
+        border: 1px solid lightgray;
+        background-color: white;
+        color: black;
+        padding: 1.2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-top: 1rem;
+
+    }
+
+    .blog-btn:hover {
+        background-color: lightgray;
+    }
+
+    #highlighted-btn {
+        background-color: red;
+        color: white;
+        border: none;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    /* card css starts here please read carefully----------------------
+    ------------------- */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin-block: 2rem;
+        gap: 2rem;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: clamp(20rem, calc(20rem + 2vw), 22rem);
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        background: #ECE9E6;
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+        transition: transform .2s;
+        /* Animation */
+
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    .card__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+
+    .tag {
+        align-self: flex-start;
+        padding: .25em .75em;
+        border-radius: 1em;
+        font-size: .75rem;
+    }
+
+    .tag+.tag {
+        margin-left: .5em;
+    }
+
+    .tag-blue {
+        background: #56CCF2;
+        background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+        color: #fafafa;
+    }
+
+
+    .card__body h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .card__footer {
+        display: flex;
+        padding: 1rem;
+        margin-top: auto;
+    }
+
+    .user {
+        display: flex;
+        gap: 5rem;
+    }
+
+
+    .card-icon {
+        width: 2rem;
+        display: inline;
+    }
+
+    /* footer css sharts here ------------------
+    ------------------------------------------------- */
+    footer {
+        background-color: black;
+    }
+
+    .footer-banner {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: lightgray;
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .footer-link ul>li {
+        display: inline-block;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-link ul>li>a {
+        color: lightgray;
+    }
+
+    .social_media_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+
+    .social_media_icon_container {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
