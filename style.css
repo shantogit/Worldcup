@@ -878,5 +878,7 @@ a {
     }
     
     .icon{
-        width: 50px
+        width: 50px;
+        padding: 20px;
+            
     }
